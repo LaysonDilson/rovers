@@ -9,12 +9,9 @@ public class Main {
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
 
-		int x = 0; 
 		int xMax = 0; 
 		int yMax = 0; 
-		int y = 0;
-		String pos = "";
-
+		
 		System.out.println("Insira o tamanho maximo para o plano. Ex.: 5 5");
 		String maximos = scanner.nextLine(); 
 		String[] tamanhos = maximos.split(" ");
@@ -41,7 +38,7 @@ public class Main {
 		System.out.println("Posicionamento final dos Rovers adicionados");
 		i=0;
 		for (Rover rover : rovers) {
-			System.out.println("Rover "+(++i)+": "+rover.getPosicaoFinal());			
+			System.out.println("Rover +"+(++i)+": "+rover.getPosicaoFinal());			
 		}
 		
 	}
