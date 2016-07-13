@@ -26,7 +26,7 @@ public class Main {
 		do {
 			i++;
 			System.out.println("Definindo Rover "+i);
-			System.out.println("Adicione a coordenada inicial e a posicao para onde o Rover est· direcionado. Ex.: 1 2 N");
+			System.out.println("Adicione a coordenada inicial e a posicao para onde o Rover est√° direcionado. Ex.: 1 2 N");
 			String posicoes = scanner.nextLine();
 			String[] posicao = posicoes.split(" ");
 			Rover rov = new Rover(Integer.parseInt(posicao[0]), Integer.parseInt(posicao[1]), posicao[2],xMax,yMax);
@@ -41,7 +41,7 @@ public class Main {
 		System.out.println("Posicionamento final dos Rovers adicionados");
 		i=0;
 		for (Rover rover : rovers) {
-			System.out.println("Rover +"+(++i)+": "+rover.getPosicaoFinal());			
+			System.out.println("Rover "+(++i)+": "+rover.getPosicaoFinal());			
 		}
 		
 	}
